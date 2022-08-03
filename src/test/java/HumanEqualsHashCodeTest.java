@@ -9,13 +9,13 @@ class HumanEqualsHashCodeTest {
 
     @Test
     void testEquals() {
-        Assertions.assertEquals(false, child.equals(child1));
-        Assertions.assertEquals(true, child3.equals(child2));
+        Assertions.assertNotEquals(child, child1);
+        Assertions.assertEquals(child3, child2);
     }
 
     @Test
     void testHashCode() {
-        Assertions.assertTrue(child2.hashCode()==child3.hashCode());
-        Assertions.assertFalse(child.hashCode()==child1.hashCode());
+        Assertions.assertEquals(child2.hashCode(), child3.hashCode());
+        Assertions.assertNotEquals(child.hashCode(), child1.hashCode());
     }
 }

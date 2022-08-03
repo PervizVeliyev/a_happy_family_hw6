@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -32,7 +31,6 @@ class FamilyTest {
         Assertions.assertEquals(mother, family.getChildren()[family.getChildren().length - 1].getFamily().getMother());
         Assertions.assertEquals(father, family.getChildren()[family.getChildren().length - 1].getFamily().getFather());
         Assertions.assertEquals(dog, family.getChildren()[family.getChildren().length - 1].getFamily().getPet());
-
     }
 
     @Test

@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7260ff34-5b42-4a51-a0d5-83e71b4da25a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DayOfWeek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Family.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Species.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FamilyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HumanEqualsHashCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FamilyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FamilyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +47,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
@@ -70,7 +59,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HumanEqualsHashCodeTest.testHashCode">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="a_happy_family_hw6" />
@@ -78,31 +67,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FamilyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FamilyTest.addChild" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="a_happy_family_hw6" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FamilyTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FamilyTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="a_happy_family_hw6" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FamilyTest" />
-      <option name="METHOD_NAME" value="testToString" />
+      <option name="METHOD_NAME" value="addChild" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HumanEqualsHashCodeTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FamilyTest.deleteChildWithIndex2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a_happy_family_hw6" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FamilyTest" />
+      <option name="METHOD_NAME" value="deleteChildWithIndex2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HumanEqualsHashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="a_happy_family_hw6" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HumanEqualsHashCodeTest" />
-      <option name="METHOD_NAME" value="testEquals" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HumanEqualsHashCodeTest.testHashCode" />
-        <item itemvalue="JUnit.HumanEqualsHashCodeTest.testEquals" />
-        <item itemvalue="JUnit.FamilyTest" />
-        <item itemvalue="JUnit.FamilyTest.testToString" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.HumanEqualsHashCodeTest" />
+        <item itemvalue="JUnit.FamilyTest.addChild" />
+        <item itemvalue="JUnit.FamilyTest.deleteChildWithIndex2" />
+        <item itemvalue="JUnit.HumanEqualsHashCodeTest.testHashCode" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +128,10 @@
       <workItem from="1659122383657" duration="7318000" />
       <workItem from="1659180378203" duration="18000" />
       <workItem from="1659191610666" duration="9731000" />
+      <workItem from="1659209414157" duration="809000" />
+      <workItem from="1659211487414" duration="1441000" />
+      <workItem from="1659247952314" duration="630000" />
+      <workItem from="1659547985614" duration="423000" />
     </task>
     <servers />
   </component>

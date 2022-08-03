@@ -79,7 +79,7 @@ public class Pet {
                 ", age=" + age +
                 ", trickLevel=" + trickLevel +
                 ", habits=" + Arrays.toString(habits) +
-                ", " + this.species.toString();
+                ", " + this.species;
     }
 
     @Override
