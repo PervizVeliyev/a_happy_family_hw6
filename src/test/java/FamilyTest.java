@@ -16,20 +16,37 @@ class FamilyTest {
     void testToString() {
         family.setPet(dog);
         family.addChild(child);
-        Assertions.assertEquals("Family{mother=Human{name='Arzu', surname='Ismayilova', year=1975, iq=0, schedule=There's no schedule}, father=Human{name='Senan', surname='Ismayilov', year=1975, iq=0, schedule=There's no schedule}, pet=DOG{nickname='Danny', age=6, trickLevel=55, habits=[eat, run, bite], canFly=false, numberOfLegs=4, hasFur=true}, children=[Human{name='Elnur', surname='Ismayilov', year=2000, iq=94, schedule=There's no schedule}]}", family.toString());
 
+        Assertions.assertEquals("Family{mother=Human{name='Arzu', surname='Ismayilova', year=1975, iq=0, schedule=There's no schedule}," +
+                " father=Human{name='Senan', surname='Ismayilov', year=1975, iq=0, schedule=There's no schedule}, pet=DOG{nickname='Danny', age=6," +
+                " trickLevel=55, habits=[eat, run, bite], canFly=false, numberOfLegs=4, hasFur=true}," +
+                " children=[Human{name='Elnur', surname='Ismayilov', year=2000, iq=94, schedule=There's no schedule}]}", family.toString());
     }
 
     @Test
-    void addChild() {
+    void addChildLengthTest() {
         family.setPet(dog);
         family.addChild(child);
-        Assertions.assertEquals(1,family.getChildren().length);
         family.addChild(child1);
+
         Assertions.assertEquals(2, family.getChildren().length);
-        Assertions.assertEquals(child1, family.getChildren()[family.getChildren().length - 1]);
+    }
+
+    @Test
+    void addChildRelationshipTest1(){
+        family.setPet(dog);
+        family.addChild(child);
+        family.addChild(child1);
+
         Assertions.assertEquals(mother, family.getChildren()[family.getChildren().length - 1].getFamily().getMother());
-        Assertions.assertEquals(father, family.getChildren()[family.getChildren().length - 1].getFamily().getFather());
+    }
+
+    @Test
+    void addChildRelationshipTest2(){
+        family.setPet(dog);
+        family.addChild(child);
+        family.addChild(child1);
+
         Assertions.assertEquals(dog, family.getChildren()[family.getChildren().length - 1].getFamily().getPet());
     }
 
@@ -63,7 +80,6 @@ class FamilyTest {
 
         Assertions.assertEquals(Arrays.toString(tempArray), Arrays.toString(family.getChildren()));
         Assertions.assertFalse(condition);
-
     }
 
     @Test
@@ -72,14 +88,15 @@ class FamilyTest {
         family.addChild(child);
         family.addChild(child1);
         family.addChild(child2);
-
         family.deleteChild(child1);
+
         for(int i = 0; i < family.getChildren().length; i++){
             if(family.getChildren()[i].equals(child1)) {
                 condition = false;
                 break;
             }
         }
+
         Assertions.assertTrue(condition);
     }
 
@@ -89,11 +106,9 @@ class FamilyTest {
         family.addChild(child1);
         family.addChild(child2);
         Human[] tempArray = family.getChildren();
-
         family.deleteChild(mother);
 
         Assertions.assertEquals(Arrays.toString(tempArray), Arrays.toString(family.getChildren()));
-
     }
 
     @Test

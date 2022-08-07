@@ -8,14 +8,22 @@ class HumanEqualsHashCodeTest {
     Human child3 = new Human("Elvin","Ismayilov",1996,92, null);
 
     @Test
-    void testEquals() {
+    void testEqualsFalse() {
         Assertions.assertNotEquals(child, child1);
-        Assertions.assertEquals(child3, child2);
     }
 
     @Test
-    void testHashCode() {
+    void testEqualsTrue() {
+        Assertions.assertEquals(child2, child3);
+    }
+
+    @Test
+    void testHashCodeTrue() {
         Assertions.assertEquals(child2.hashCode(), child3.hashCode());
+    }
+
+    @Test
+    void testHashCodeFalse() {
         Assertions.assertNotEquals(child.hashCode(), child1.hashCode());
     }
 }

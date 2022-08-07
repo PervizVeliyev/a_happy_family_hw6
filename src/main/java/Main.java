@@ -1,5 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+        for(int i = 0; i < 101; i++){                                                //for the usage of loop in the main class of human object
+            Human human1 = new Human("Esmira", "Veliyeva", 2000);
+            Human human2 = new Human("Ferid", "Veliyev", 1997);
+            Human human3 = new Human("Perviz", "Veliyev", 1999);
+            Human human4 = new Human("Semed", "Teymurov", 2000);
+            Human human5 = new Human("Elsen", "Quliyev", 2000);
+            Human human6 = new Human("Nigar", "Suleymanova", 2002);
+        }                                                                             //garbage collector will sweep them after some time
 
         Pet dog = new Pet(Species.DOG,"Danny",6,55,new String[]{"eat","run","bite"});
         Human mother = new Human("Arzu","Ismayilova",1975);
@@ -12,7 +20,6 @@ public class Main {
         family.addChild(child);
         family.addChild(child1);
         family.addChild(child2);
-
 
         System.out.println(family.deleteChild(2));
         family.deleteChild(child1);
@@ -27,8 +34,5 @@ public class Main {
         System.out.println(family);
         System.out.println(child);
         System.out.println(dog);
-
-        System.gc();
-
     }
 }
